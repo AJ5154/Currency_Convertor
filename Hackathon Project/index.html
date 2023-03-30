@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="img-cropper">
+      <img
+        src="https://www.goodreturns.in/common_dynamic/images/social_share/social_share_currency.1565761964.jpg"
+        alt="currancy not found"
+        class="pic"
+      />
+    </div>
+    <h1>Currency Converter</h1>
+    <p>Choose The Currency and the amounts to get the exchange rate.</p>
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="USD">US dollar</option>
+          <option value="JPY">Japanese yen</option>
+          <option value="BGN">Bulgarian lev</option>
+          <option value="CZK">Czech koruna</option>
+          <option value="DKK">Danish krone</option>
+          <option value="GBP">Pound sterling</option>
+          <option value="HUF">Hungarian forint</option>
+          <option value="PLN">Polish zloty</option>
+          <option value="RON">Romanian leu</option>
+          <option value="SEK">Swedish krona</option>
+          <option value="CHF">Swiss franc</option>
+          <option value="ISK">Icelandic krona</option>
+          <option value="NOK">Norwegian krone</option>
+          <option value="TRY">Turkish lira</option>
+          <option value="AUD">Australian dollar</option>
+          <option value="BRL">Brazilian real</option>
+          <option value="CAD">Canadian dollar</option>
+          <option value="CNY">Chinese yuan renminbi</option>
+          <option value="HKD">Hong Kong dollar</option>
+          <option value="IDR">Indonesian rupiah</option>
+          <option value="ILS">Israeli shekel</option>
+          <option value="INR" selected>Indian rupee</option>
+          <option value="KRW">South Korean won</option>
+          <option value="MXN">Mexican peso</option>
+          <option value="MYR">Malaysian ringgit</option>
+          <option value="NZD">New Zealand dollar</option>
+          <option value="PHP">Philippine peso</option>
+          <option value="SGD">Singapore dollar</option>
+          <option value="THB">Thai baht</option>
+          <option value="ZAR">South African rand</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="1" />
+      </div>
+      <div class="swap-container">
+        <button class="btn" id="swap">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+      <div class="currency">
+        <select id="currency-two">
+          <option value="USD" selected>US dollar</option>
+          <option value="JPY">Japanese yen</option>
+          <option value="BGN">Bulgarian lev</option>
+          <option value="CZK">Czech koruna</option>
+          <option value="DKK">Danish krone</option>
+          <option value="GBP">Pound sterling</option>
+          <option value="HUF">Hungarian forint</option>
+          <option value="PLN">Polish zloty</option>
+          <option value="RON">Romanian leu</option>
+          <option value="SEK">Swedish krona</option>
+          <option value="CHF">Swiss franc</option>
+          <option value="ISK">Icelandic krona</option>
+          <option value="NOK">Norwegian krone</option>
+          <option value="TRY">Turkish lira</option>
+          <option value="AUD">Australian dollar</option>
+          <option value="BRL">Brazilian real</option>
+          <option value="CAD">Canadian dollar</option>
+          <option value="CNY">Chinese yuan renminbi</option>
+          <option value="HKD">Hong Kong dollar</option>
+          <option value="IDR">Indonesian rupiah</option>
+          <option value="ILS">Israeli shekel</option>
+          <option value="INR">Indian rupee</option>
+          <option value="KRW">South Korean won</option>
+          <option value="MXN">Mexican peso</option>
+          <option value="MYR">Malaysian ringgit</option>
+          <option value="NZD">New Zealand dollar</option>
+          <option value="PHP">Philippine peso</option>
+          <option value="SGD">Singapore dollar</option>
+          <option value="THB">Thai baht</option>
+          <option value="ZAR">South African rand</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" value="0" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
